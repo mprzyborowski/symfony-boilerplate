@@ -1,0 +1,21 @@
+app_homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Default:index }
+
+app_admin:
+    path:     /admin
+    defaults: { _controller: AppBundle:Default:index }
+
+app_login:
+    path:     /login
+    defaults: { _controller: AppBundle:Security\Login:index }
+
+app_register:
+    path:     /register
+    defaults: { _controller: AppBundle:Security\Register:index }
+
+app_login_check:
+    path:     /login_check
+
+app_logout:
+    path:     /logout

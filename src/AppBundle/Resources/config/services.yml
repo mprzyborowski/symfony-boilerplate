@@ -1,0 +1,11 @@
+services:
+    user_provider:
+        class: AppBundle\Services\Security\UserProvider
+
+    user_login:
+        class: AppBundle\Services\Security\UserLogin
+        arguments: ['@security.token_storage', '@session', '@event_dispatcher']
+
+    user_register:
+        class: AppBundle\Services\Security\UserRegister
+        arguments: ['@security.encoder_factory', '@kernel']

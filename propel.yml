@@ -1,0 +1,10 @@
+propel:
+    database:
+        connections:
+            default:
+                adapter: mysql
+                dsn: mysql:host=192.168.88.48;port=3306;dbname=
+                user: bpol
+                password: bpol
+                settings:
+                    charset: utf8
